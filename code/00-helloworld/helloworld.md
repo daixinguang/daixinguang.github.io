@@ -1,6 +1,8 @@
+# 使用gcc/g++/cmake编译C/C++程序
 
-使用gcc/g++/cmake编译C/C++程序
+C语言后缀为.c，C++语言后缀为.cpp，Bazel是C++语言，但是后缀为.cc。
 
+## gcc和g++
 gcc: C语言编译器，也可以编译C++程序，但是C++程序需要加上-std=c++11等参数来支持C++11标准，并且需要链接C++标准库。
 
 ```bash
@@ -21,6 +23,8 @@ g++ ./helloworld.cpp -o helloworld
 
 gcc和g++都可以通过-o参数指定输出文件名。
 
+## make和cmake
+
 make: 编译工具，用于执行编译指令
     makefile: 编译指令文件
 
@@ -36,7 +40,6 @@ make clean
 cmake: 跨平台编译工具，可以生成makefile等文件
     cmakelists.txt: cmake的配置文件
 
-
 ```bash
 # 编译
 mkdir build
@@ -48,12 +51,28 @@ make
 ./helloworld.cpp
 ```
 
-clang: C/C++语言编译器
+## clang和MSVC: C/C++语言编译器
+
+clang和MSVC都是C/C++编译器，用法类似,clang是Apple官方支持的编译器，也可以在Linux和Windows中使用。MSVC是Windows专属的C/C++编译器。
+
+### clang
+
 ```bash
-clang hello.c -o hello    # 编译 C 程序
-clang++ hello.cpp -o hello  # 编译 C++ 程序
+clang helloworld.c -o helloworld_c     # 编译 C 程序
+clang++ helloworld.cpp -o helloworld_cpp  # 编译 C++ 程序
 ```
+
+### MSVC
 
 MSVC: Microsoft Visual C++编译器
 
-bazel: 构建工具
+TODO...
+
+## Bazel
+
+bazel: 构建工具，C/C++的bazel就相当于java的maven/Gradle,JavaScript的webpack,Python的setuptools。使用bael可以很方便的编译C/C++程序。
+
+```bash
+bazel build //:helloworld_bazel
+./bazel-bin/helloworld_bazel
+```
