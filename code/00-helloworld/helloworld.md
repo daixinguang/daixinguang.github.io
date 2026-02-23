@@ -24,9 +24,36 @@ gcc和g++都可以通过-o参数指定输出文件名。
 make: 编译工具，用于执行编译指令
     makefile: 编译指令文件
 
+```bash
+# make可以直接编译 makefile中的指令
+make
+# 也可以指定编译哪个目标，例如：
+make hello
+# 清理编译结果
+make clean
+```
+
 cmake: 跨平台编译工具，可以生成makefile等文件
     cmakelists.txt: cmake的配置文件
 
+
+```bash
+# 编译
+mkdir build
+cd build
+cmake ..
+make
+# 执行
+./helloworld.c
+./helloworld.cpp
+```
+
 clang: C/C++语言编译器
+```bash
+clang hello.c -o hello    # 编译 C 程序
+clang++ hello.cpp -o hello  # 编译 C++ 程序
+```
+
+MSVC: Microsoft Visual C++编译器
 
 bazel: 构建工具

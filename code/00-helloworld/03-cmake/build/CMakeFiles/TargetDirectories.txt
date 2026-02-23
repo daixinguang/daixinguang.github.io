@@ -1,0 +1,4 @@
+/Users/dai/code/daixinguang.github.io/code/00-helloworld/03-cmake/build/CMakeFiles/helloworld_c.dir
+/Users/dai/code/daixinguang.github.io/code/00-helloworld/03-cmake/build/CMakeFiles/helloworld_cpp.dir
+/Users/dai/code/daixinguang.github.io/code/00-helloworld/03-cmake/build/CMakeFiles/edit_cache.dir
+/Users/dai/code/daixinguang.github.io/code/00-helloworld/03-cmake/build/CMakeFiles/rebuild_cache.dir

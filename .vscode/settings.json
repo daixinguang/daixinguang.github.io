@@ -1,0 +1,8 @@
+{
+    "cmake.sourceDirectory": "/Users/dai/code/daixinguang.github.io/code/01-pcl",
+    "files.associations": {
+        "*.py": "python",
+        "ostream": "cpp",
+        "memory": "cpp"
+    }
+}
