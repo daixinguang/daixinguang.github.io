@@ -20,6 +20,17 @@ body {
       font-weight: 300; }
 
 /* -------------------------------------------------
+ * 全局样式
+ * ------------------------------------------------- */
+.link {
+        font-size: .5rem;
+        border: 1px solid #4db6ac;
+        padding: 1px 3px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        margin-left: .5rem;
+    }
+/* -------------------------------------------------
  * 头部部分
  * ------------------------------------------------- */
 .header {
@@ -109,24 +120,24 @@ body {
   float: right;
 }
 
-.skill-info {
+.container .side .skill .skill-info {
   display: flex;
   align-items: center;
 }
 
-.skill-info .skill-item{
+.container .side .skill .skill-info .skill-item{
   width: 5em;
 }
 
 
-.level-indicator {
+.container .side .skill .level-indicator {
   display: flex;
   align-items: center;
   gap: 6px;
   flex: 1;
 }
 
-.level {
+.container .side .skill .level {
   width: 25px;
   height: 6px;
   background-color: #ddd;
@@ -135,21 +146,21 @@ body {
 }
 
 /* 根据data-level控制前几个圆点高亮 */
-.skill-info[data-level="4"] .level:nth-child(-n+4) {
+.container .side .skill .skill-info[data-level="4"] .level:nth-child(-n+4) {
   background-color: #4db6ac;
 }
 /* 级别3：所有三个圆点都高亮 */
-.skill-info[data-level="3"] .level:nth-child(-n+3) {
+.container .side .skill .skill-info[data-level="3"] .level:nth-child(-n+3) {
   background-color: #4db6ac;
 }
 
 /* 级别2：前两个圆点高亮 */
-.skill-info[data-level="2"] .level:nth-child(-n+2) {
+.container .side .skill .skill-info[data-level="2"] .level:nth-child(-n+2) {
   background-color: #4db6ac;
 }
 
 /* 级别1：第一个圆点高亮 */
-.skill-info[data-level="1"] .level:nth-child(1) {
+.container .side .skill .skill-info[data-level="1"] .level:nth-child(1) {
   background-color: #4db6ac;
 }
 
@@ -257,7 +268,7 @@ mark {
 
 @media screen and (max-width: 1169px) {
   .container .info-unit h3 span {
-    display: block; }
+    display: inline; }
 
   .container .info-unit h3 span.link {
     display: inline; }
