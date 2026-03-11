@@ -177,8 +177,9 @@ body {
     padding-left: 1.2rem;
     padding-right: 0.8rem; }
     .container .main .info-unit ul li {
-      margin-bottom: 1rem;
       list-style: disc; }
+    .container .main .info-unit ol li {
+        list-style: decimal; }
       .container .main .info-unit ul li h3 .link {
         font-size: .5rem;
         border: 1px solid #4db6ac;
@@ -190,8 +191,9 @@ body {
         text-align: right;
         float: right; }
       .container .main .info-unit ul li .info-content li {
-        list-style: circle;
-        margin: 0; }
+        list-style: circle;}
+        .container .main .info-unit ul li ol li {
+          margin-left: 1rem; }
       .container .main .info-unit ul li .info-content .fa {
         font-size: 1em; }
 
